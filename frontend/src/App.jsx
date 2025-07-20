@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import Sidebar from './components/Sidebar'
-import Dashboard from './pages/Dashboard'
-import './App.css'
+// src/App.jsx
+import React from "react";
+import Navbar from "./components/TopNavbar";
+import Hero from "./components/Sidebar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="flex bg-[#121420] min-h-screen"> 
-    <Sidebar/>
-    <Dashboard/>
-
+    <div className="font-sans">
+      <Navbar />
+      <Hero />
     </div>
   );
-}
+};
 
-export default App
+export default App;
